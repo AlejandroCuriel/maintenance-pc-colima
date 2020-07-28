@@ -66,12 +66,15 @@ a {
 #facebook:hover{
 color: #3f73e4;
 }
+
 #instagram:hover{
 color: #bb3838;
 }
+
 #whatsapp:hover{
 color: #00bb2d;
 }
+
 /* Home */
 .site-header {
     background-image: url(../img/joven.png);
@@ -223,18 +226,20 @@ color: #00bb2d;
 }
 
 .social-networks a{
-color: #ffffff;
-font-size: 3rem;
-margin-right: 3rem;
+    color: #ffffff;
+    font-size: 3rem;
+    margin-right: 3rem;
 }
 
 footer .navigation-content{
-    text-align: start !important;
     display: inline-block;
+    text-align: start !important;
 }
+
 footer .navigation-content li:last-of-type{
     display: none;
 }
+
 footer .footer-container h4::after{
     background-color: rgb(57, 199, 180);
     content: '';
@@ -243,10 +248,11 @@ footer .footer-container h4::after{
     margin-top: 1rem;
     width: 80px;
 }
-footer #copyright{
-text-align: center;
 
+footer #copyright{
+    text-align: center;
 }
+
 footer span{
     font-style: italic;
     font-weight: bold;
