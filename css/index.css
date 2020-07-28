@@ -40,6 +40,7 @@ img {
 
 a {
     text-decoration: none;
+    font-size: 1.8rem;
 }
 
 /* Utilities */
@@ -50,6 +51,28 @@ a {
 .container {
     max-width: 90%;
     margin: auto auto;
+}
+
+.button {
+    background-color: rgb(19, 169, 189);
+    padding: 1rem 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-family: fantasy;
+    border-radius: 10%;
+}
+
+#facebook:hover{
+color: #3f73e4;
+}
+
+#instagram:hover{
+color: #bb3838;
+}
+
+#whatsapp:hover{
+color: #00bb2d;
 }
 
 /* Home */
@@ -82,6 +105,8 @@ a {
     font-size: 1.7rem;
     font-weight: bold;
     list-style: none;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
@@ -152,9 +177,9 @@ a {
 }
 
 .introducing p {
-    color: #ffffff;
-    font-size: 3em;
     width: 70%;
+    color: #ffffff;
+
 }
 
 .introducing ::after {
@@ -183,4 +208,52 @@ a {
     height: 100vh;
     justify-content: space-between;
     padding-bottom: 10rem;
+}
+
+/* Footer */
+.site-footer {
+    background-color: rgb(93, 93, 93);
+    padding: 2rem 0;
+}
+.site-footer h4, p{
+    color: #ffffff;
+}
+@media only screen and (min-width:768px) {
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.social-networks a{
+    color: #ffffff;
+    font-size: 3rem;
+    margin-right: 3rem;
+}
+
+footer .navigation-content{
+    display: inline-block;
+    text-align: start !important;
+}
+
+footer .navigation-content li:last-of-type{
+    display: none;
+}
+
+footer .footer-container h4::after{
+    background-color: rgb(57, 199, 180);
+    content: '';
+    display: block;
+    height: 3px;
+    margin-top: 1rem;
+    width: 80px;
+}
+
+footer #copyright{
+    text-align: center;
+}
+
+footer span{
+    font-style: italic;
+    font-weight: bold;
 }
