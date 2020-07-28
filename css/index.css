@@ -1,0 +1,253 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;   /*Reiniciamos los rems de 16px a 10px*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+/* Globals */
+h1 {
+    font-size: 3.9rem;
+}
+
+h2 {
+    font-size: 3.3rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 2.3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+/* Utilities */
+.no-margin {
+    margin: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto auto;
+}
+
+.button {
+    background-color: rgb(19, 169, 189);
+    padding: 1rem 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-family: fantasy;
+    border-radius: 10%;
+}
+
+#facebook:hover{
+color: #3f73e4;
+}
+#instagram:hover{
+color: #bb3838;
+}
+#whatsapp:hover{
+color: #00bb2d;
+}
+/* Home */
+.site-header {
+    background-image: url(../img/joven.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 100%, 50% 88%, 0% 100%, 0 50%, 0% 0%);
+    height: 100vh;
+    position: relative;
+
+}
+
+.site-header::before {
+    background: linear-gradient(to right, rgba(0, 42, 63, 0.986), rgb(62, 226, 241));
+    clip-path: polygon(100% 0, 100% 100%, 50% 88%, 0% 100%, 0 50%, 0% 0%);
+    content: "";
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+}
+
+.site-header div {
+    position: relative;
+}
+
+.navigation-content {
+    font-size: 1.7rem;
+    font-weight: bold;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.logo-content h1 {
+    font-size: 2.7rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .navigation-container {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-content {
+        display: flex;
+    }
+
+    .logo-content h1 {
+        font-size: 3.9rem;
+    }
+}
+
+.navigation-container img {
+    height: 14rem;
+}
+
+.logo-content {
+    align-items: center;
+    display: flex;
+}
+
+.logo-content h1 {
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+    .navigation-content {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.navigation-content a {
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.navigation-content li {
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+}
+
+.navigation-content li:hover {
+    background-color: rgb(25, 41, 75);
+    border-radius: 5%;
+    transition: all .3s ease-in-out;
+}
+
+@media only screen and (min-width:768px) {
+    .navigation-content li:last-of-type {
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+    }
+}
+
+.introducing p {
+    width: 70%;
+    color: #ffffff;
+
+}
+
+.introducing ::after {
+    background-color: rgb(57, 199, 180);
+    content: '';
+    display: block;
+    height: 3px;
+    margin-top: 1rem;
+    width: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+    .introducing p {
+        font-size: 5em;
+        width: 40%;
+    }
+
+    .introducing::after {
+        width: 300px;
+    }
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    padding-bottom: 10rem;
+}
+
+/* Footer */
+.site-footer {
+    background-color: rgb(93, 93, 93);
+    padding: 2rem 0;
+}
+.site-footer h4, p{
+    color: #ffffff;
+}
+@media only screen and (min-width:768px) {
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.social-networks a{
+color: #ffffff;
+font-size: 3rem;
+margin-right: 3rem;
+}
+
+footer .navigation-content{
+    text-align: start !important;
+    display: inline-block;
+}
+footer .navigation-content li:last-of-type{
+    display: none;
+}
+footer .footer-container h4::after{
+    background-color: rgb(57, 199, 180);
+    content: '';
+    display: block;
+    height: 3px;
+    margin-top: 1rem;
+    width: 80px;
+}
+footer #copyright{
+text-align: center;
+
+}
+footer span{
+    font-style: italic;
+    font-weight: bold;
+}
