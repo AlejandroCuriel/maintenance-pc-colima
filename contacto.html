@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" type="image/png" href="img/favicon.ico">
     <script src="https://kit.fontawesome.com/42cab9f28b.js" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
     <header class="pag-header">
-        <div class="navigation-container">
+        <div class="navigation-container container">
             <a href="/index.html">
                 <div class="logo-content">
-                    <img src="/img/logo-removebg-preview.png">
+                    <img src="/img/fondo_prueva-removebg-preview.png">
                     <h1>Mantenimiento PC Colima</h1>
                 </div>
             </a>
@@ -30,7 +31,7 @@
                         <a href="nosotros.html">Nosotros</a>
                     </li>
                     <li>
-                        <a href="nosotros.html">Ubicacion</a>
+                        <a href="nosotros.html">Ubicación</a>
                     </li>
                     <li>
                         <a href="galeria.html">Galeria</a>
@@ -41,50 +42,44 @@
                 </ul>
             </nav>
         </div>
-
     </header>
 
     <main>
         <div class="contact-content contact-box">
-            <div class="g">
-                <form class="fields-container">
+            <div class="fields-container">
+                <form class="fields-content">
                     <fieldset>
                         <h1 class="text-center">Contáctanos </h1>
                         <div class="fields">
                             <div>
-                                <div class="field">
+                                <div class="field" id="error">
                                     <input type="text" name="nombre" id="nombre" required placeholder="Tu Nombre">
                                 </div>
-                                <div class="field">
+                                <div class="field" id="error">
                                     <input type="text" name="apellido" id="apellido" required placeholder="Tu Apellido">
                                 </div>
                             </div>
                             <div>
-                                <div class="field">
-                                    <input type="tel" name="telefono" id="telefono" required placeholder="Tu telefono">
+                                <div class="field" id="error">
+                                    <input type="tel" name="telefono" id="telefono" required placeholder="Tu teléfono">
                                 </div>
-                                <div class="field">
-                                    <input type="email" name="e-mail" id="e-mail" required placeholder="Tu email">
+                                <div class="field" id="error">
+                                    <input type="email" name="email" id="email" required placeholder="Tu email">
                                 </div>
                             </div>
-                            <div class="field">
-                                <textarea name="reason" id="reason" placeholder="En que podemos ayudarte"></textarea>
+                            <div class="field" id="error">
+                                <textarea name="reason" id="reason" placeholder="¿En que podemos ayudarte?" required></textarea>
                             </div>
                         </div>
-
-
-
                         <div class="text-center">
-                            <input class="button" type="submit" value="Enviar">
+                            <input class="button" id="btnRegistro" type="submit" value="Enviar">
                         </div>
                     </fieldset>
                 </form>
                 <div class="contact-info">
                     <h3>Informacion contacto</h3>
-                    <div class="m">
-                        <p><i class="fas fa-mobile-alt "></i>3122267486</p>
+                        <p><i class="fas fa-mobile-alt "></i>3121560557</p>
                         <p><i class="fas fa-envelope"></i>mantenpc-colima@outlook.com</p>
-                    </div>
                     <!--<img src="/img/logo-fondo.png" alt="logo"> -->
                 </div>
             </div>
@@ -130,7 +125,6 @@
                         </ul>
                     </nav>
                 </div>
-
             </div>
             <p id="copyright">&copy; Copyright 2020 <span>Mantenimiento PC Colima</span> </p>
         </div>
