@@ -103,7 +103,9 @@ a {
 .text-center {
     text-align: center;
 }
-
+.text-justify{
+    text-align: justify;
+}
 #instagram:hover {
     color: #bb3838;
 }
@@ -162,8 +164,14 @@ a {
 }
 
 .navigation-container img {
-    width: 20%;
     margin-right: 2rem;
+    width: 40%;
+}
+
+@media only screen and (min-width: 768px) {
+    .navigation-container img {
+        width: 20%;
+    }
 }
 
 .logo-content {
@@ -174,7 +182,6 @@ a {
 .logo-content h1 {
     color: #ffffff;
     font-size: 2.7rem;
-    color: #ffffff;
 }
 
 @media only screen and (min-width: 768px) {
