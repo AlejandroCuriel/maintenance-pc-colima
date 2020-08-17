@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
-    font-size: 62.5%;   /*Reiniciamos los rems de 16px a 10px*/
+    font-size: 62.5%;
+    /*Reiniciamos los rems de 16px a 10px*/
 }
 
 *,
@@ -11,11 +12,13 @@ html {
 
 body {
     margin: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Globals */
 h1 {
     font-size: 3.9rem;
+    font-family: 'PT Serif', serif;
 }
 
 h2 {
@@ -55,27 +58,32 @@ a {
 
 .button {
     background-color: rgb(19, 169, 189);
-    padding: 1rem 2rem;
+    border-radius: 10%;
+    cursor: pointer;
     color: #ffffff;
+    padding: 1rem 2rem;
     text-transform: uppercase;
     font-size: 1.4rem;
     font-family: fantasy;
-    border-radius: 10%;
 }
 
-#facebook:hover{
-color: #3f73e4;
+.text-center {
+    text-align: center;
 }
 
-#instagram:hover{
-color: #bb3838;
+#facebook:hover {
+    color: #3f73e4;
 }
 
-#whatsapp:hover{
-color: #00bb2d;
+#instagram:hover {
+    color: #bb3838;
 }
 
-/* Home */
+#whatsapp:hover {
+    color: #00bb2d;
+}
+
+/* header */
 .site-header {
     background-image: url(../img/joven.png);
     background-position: center center;
@@ -110,29 +118,8 @@ color: #00bb2d;
     text-align: center;
 }
 
-.logo-content h1 {
-    font-size: 2.7rem;
-}
-
-@media only screen and (min-width: 768px) {
-    .navigation-container {
-        align-items: center;
-        color: #ffffff;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .logo-content {
-        display: flex;
-    }
-
-    .logo-content h1 {
-        font-size: 3.9rem;
-    }
-}
-
 .navigation-container img {
-    height: 14rem;
+    margin-right: 2rem;
 }
 
 .logo-content {
@@ -142,6 +129,29 @@ color: #00bb2d;
 
 .logo-content h1 {
     color: #ffffff;
+    font-size: 2.7rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .navigation-container {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+
+    .navigation-container img {
+        width: 20%;
+    }
+
+    .logo-content {
+        display: flex;
+    }
+
+    .logo-content h1 {
+        font-size: 3.9rem;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -177,9 +187,8 @@ color: #00bb2d;
 }
 
 .introducing p {
-    width: 70%;
     color: #ffffff;
-
+    width: 70%;
 }
 
 .introducing ::after {
@@ -193,7 +202,7 @@ color: #00bb2d;
 
 @media only screen and (min-width: 768px) {
     .introducing p {
-        font-size: 5em;
+        font-size: 4em;
         width: 40%;
     }
 
@@ -210,14 +219,23 @@ color: #00bb2d;
     padding-bottom: 10rem;
 }
 
+/*sites-header*/
+.pag-header {
+    background: linear-gradient(to right, rgba(0, 42, 63, 0.986), rgb(62, 226, 241));
+}
+
 /* Footer */
 .site-footer {
     background-color: rgb(93, 93, 93);
-    padding: 2rem 0;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
-.site-footer h4, p{
+
+.site-footer h4,
+p {
     color: #ffffff;
 }
+
 @media only screen and (min-width:768px) {
     .footer-container {
         display: flex;
@@ -225,22 +243,22 @@ color: #00bb2d;
     }
 }
 
-.social-networks a{
+.social-networks a {
     color: #ffffff;
     font-size: 3rem;
     margin-right: 3rem;
 }
 
-footer .navigation-content{
+footer .navigation-content {
     display: inline-block;
     text-align: start !important;
 }
 
-footer .navigation-content li:last-of-type{
+footer .navigation-content li:last-of-type {
     display: none;
 }
 
-footer .footer-container h4::after{
+footer .footer-container h4::after {
     background-color: rgb(57, 199, 180);
     content: '';
     display: block;
@@ -249,11 +267,146 @@ footer .footer-container h4::after{
     width: 80px;
 }
 
-footer #copyright{
+footer #copyright {
     text-align: center;
+    font-size: 1.5rem;
 }
 
-footer span{
+footer span {
     font-style: italic;
     font-weight: bold;
+}
+
+/* Contact us */
+.contact-content {
+    background-image: url(../img/contacto.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-content {
+        height: 100vh;
+    }
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.fields-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media only screen and (min-width: 768px) {
+    .fields-container {
+        display: flex;
+        flex-direction: row;
+        margin: auto auto;
+    }
+}
+
+.fields-content {
+    border: 2px solid rgb(93, 93, 93);
+    background-color: #d6d6d6;
+    opacity: .9;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .fields-content {
+        width: 70rem;
+    }
+}
+
+fieldset {
+    border: none;
+}
+
+.field {
+    margin: 2rem 0;
+}
+
+.fields {
+    margin: 0 2rem;
+}
+
+.fields input {
+    background-color: #d6d6d6;
+    border: none;
+    padding: 1rem .5rem;
+    width: 300px;
+}
+
+.field::after {
+    background-color: #b1abab;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 30rem;
+}
+
+textarea {
+    background-color: #d6d6d6;
+    border: none;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    height: 9rem;
+    max-height: 9rem;
+    resize: none;
+    width: 100%;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .fields {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .field:last-of-type {
+        display: block;
+        width: 100%;
+    }
+
+    .field::after {
+        background-color: #b1abab;
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+    }
+
+    textarea {
+        background-color: #d6d6d6;
+        border: none;
+        width: 100%;
+    }
+}
+
+.contact-info {
+    background-color: rgb(93, 93, 93);
+    background-image: url(../img/logo-fondo.png);
+    background-position: -270% 60%;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 2rem;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-info {
+        background-position: -220% 150%;
+    }
+}
+
+.contact-info i {
+    margin-right: 1.5rem;
 }
