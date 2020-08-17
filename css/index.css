@@ -83,6 +83,22 @@ a {
         margin: 0 auto;
     }
 }
+.pag-header{
+    background: linear-gradient(to right, rgba(0, 42, 63, 0.986), rgb(62, 226, 241));
+}
+
+
+.reading {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .reading {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
 
 .text-center {
     text-align: center;
