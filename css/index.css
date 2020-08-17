@@ -13,6 +13,7 @@ html {
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
+    background-color: rgb(235, 235, 235);
 }
 
 /* Globals */
@@ -64,7 +65,9 @@ a {
     font-family: fantasy;
     border-radius: 10%;
 }
-
+.pag-header{
+    background: linear-gradient(to right, rgba(0, 42, 63, 0.986), rgb(62, 226, 241));
+}
 
 
 .reading {
@@ -141,6 +144,7 @@ a {
 }
 
 .navigation-container img {
+    width: 20%;
     margin-right: 2rem;
 }
 
@@ -151,6 +155,7 @@ a {
 
 .logo-content h1 {
     font-size: 2.7rem;
+    color: #ffffff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -170,18 +175,8 @@ a {
     }
 }
 
-.navigation-container img {
-    height: 14rem;
-}
 
-.logo-content {
-    align-items: center;
-    display: flex;
-}
 
-.logo-content h1 {
-    color: #ffffff;
-}
 
 @media only screen and (min-width: 768px) {
     .navigation-content {
@@ -364,7 +359,6 @@ footer span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .fields-container {
@@ -439,7 +433,6 @@ textarea {
     max-height: 9rem;
     resize: none;
     width: 100%;
-
 }
 
 @media only screen and (min-width: 768px) {
